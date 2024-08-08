@@ -7,4 +7,4 @@ ROUND(SUM(gross_price*sold_quantity)/1000000,2) AS Gross_sales_Amount
 FROM fact_sales_monthly AS a
 JOIN fact_gross_price AS b
 ON a.product_code = b.product_code
-GROUP BY month_name, year_;
+GROUP BY month_, year_;
